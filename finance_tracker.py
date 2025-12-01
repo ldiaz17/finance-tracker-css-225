@@ -30,6 +30,7 @@ while True:
 
     #Step 6: Print each category with the amount
     for i in range(len(categories)):
+         bar = '*' * int(amount[i] // 10)                 
         print(categories[i], ":", amounts[i])                
 
     

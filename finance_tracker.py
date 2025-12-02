@@ -15,8 +15,8 @@ while True:
   if category.lower() == "done":
     break 
   amount = float(input(f"Enter amount for {category}: "))
-    categories.append(category)
-    amounts.append(amount)
+  categories.append(category)
+  amounts.append(amount)
 
 # Step 4: Calculate totals
 total_expenses = sum(amounts)
@@ -30,8 +30,8 @@ print("\nExpenses by Category:")
 
 #Step 6: Print each category with the amount
 for i in range(len(categories)):
-  bar = '*' * int(amount[i] // 10)
-print(categories[i], ":", amounts[i], "|", bar)                
+    bar = '*' * int(amounts[i] // 10)
+    print(categories[i], ":", amounts[i], "|", bar)                
 
     
 
